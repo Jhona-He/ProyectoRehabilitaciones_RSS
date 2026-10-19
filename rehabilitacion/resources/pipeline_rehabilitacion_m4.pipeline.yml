@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    pipeline_rehabilitacion_m4:
+      name: Pipeline_Rehabilitacion_M4
+      libraries:
+        - glob:
+            include: ../src/transformations/**
+      catalog: workspace
+      channel: CURRENT
+      continuous: false
+      photon: true
+      root_path: ../src
+      schema: ${var.schema}
+      serverless: true
