@@ -6,6 +6,8 @@
 -- El pipeline gestiona automaticamente schemaLocation y checkpoint
 -- (no se pasan como opciones en SDP).
 -- _source_file registra el archivo de origen de cada fila.
+--  Test
+
 
 CREATE OR REFRESH STREAMING TABLE sdp_bronze_rehabilitacion
 COMMENT 'Capa Bronze: datos crudos de rehabilitacion RSS ingestados con Auto Loader'
